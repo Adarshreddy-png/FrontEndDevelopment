@@ -1,0 +1,227 @@
+.input{
+   
+    font-size: 16px;
+    font-family: arial;
+    padding-left: 5px;
+    width:100%; 
+    min-width: -0px;
+    max-width: 350px;
+    height: 35px;
+    border-color: rgb(226, 226, 226);
+    border-width: 1px;
+    box-shadow: inset 1px 1px 1px  rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    
+}
+.input::placeholder{
+    font-size: 16px;
+    font-family: arial;
+     
+}
+.input:active{
+    border:none;
+}
+
+.div{
+    display:flex;
+    flex-direction: row;
+    border-width: 1px;
+    height: 60px; 
+    justify-content: space-between; 
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: aliceblue;
+    border-bottom: 1px solid;
+    border-color: rgb(214, 213, 213);
+    z-index:100;
+
+}
+.side-bar{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    top:60px;
+    bottom:0px;
+    background-color: aliceblue;
+    width: 80px;
+    left: 0;
+    border-right:1px solid;
+    border-color: rgb(214, 213, 213);
+    z-index: 100;
+}
+.left{ 
+    margin-left: 20px;
+    display: flex;
+    align-items: center;   
+}
+.right{
+    display: flex;
+    margin-right: 25px;
+    justify-content:center; 
+    flex-shrink: 0; 
+    min-width: 100px;
+    align-items: center; 
+    flex-shrink: 0;
+}
+.center{
+    display: flex;
+    align-items: center;
+    width: 600px;  
+    justify-content: center;
+}
+.menu{
+    width: 25px; 
+    margin-left:5px; 
+}
+.menu:hover,
+.search:hover,
+.youtube-apps:hover,
+.logo:hover,
+.notifications:hover,
+.mainchannel:hover,.voice:hover,.upload:hover{
+    cursor: pointer;
+    
+}
+.logo{
+    margin-left:25px;
+    width: 90px; 
+    margin-right: 60px; 
+}
+.mainchannel{
+    border-radius: 18px;
+    height: 34px;
+    margin-top: 10px; 
+    margin-bottom: 0px; 
+}
+.notifications{
+  width: 23px;
+  margin-right: 30px;
+  
+}
+
+.youtube-apps{
+    width: 23px;
+    margin-right: 30px;
+}
+.upload{
+    width: 23px;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+.voice{
+    width: 30px;
+    margin-left: 20px;
+    height: 30px; 
+    border-radius: 20px;  
+    position: relative; 
+}
+.voice .voicetool{
+    width:80px;
+    background-color: gray;
+    color: white;
+    position: absolute;
+    bottom: -20px;
+    right: -70px;
+    padding: 3px;
+    opacity: 0;
+    pointer-events:none;
+}
+.voice:hover .voicetool{
+    opacity: 1;
+    transition: opacity 0.5s ;
+}
+.search{
+    min-width: 70px;
+    height: 39px;
+    border:1px;
+    border-style: solid;
+    border-color: rgb(184, 182, 182);
+    margin-left: -1px;
+    margin-right: 0px;
+    border-radius: 2px; 
+    position: relative;  
+}
+.search:hover .tooltip{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.search:active,.voice:active
+{
+    background-color: rgb(182, 180, 180);
+}
+.search-img{
+    width:25px;
+    align-items: center;
+    border-bottom: 0px;
+}
+.voice-img{
+    width:25px;
+    margin-bottom: 0px;
+}
+.voice{
+    width: 40px;
+    padding-top: 3px;
+    height: 41px;
+    border: none;
+    height: 36px;
+    justify-items: end;
+    margin-right: 6px;
+    margin-left: 8px;
+    background-color: rgb(248, 242, 242);;
+}
+.sidebar-content{
+    height: 80px;
+    width:75px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 20px; 
+}
+.sidebar-content:hover{
+    background-color: rgb(226, 225, 225);
+    cursor: pointer;
+}
+.sidebar-content img{
+    width: 25px;   
+}
+.sidebar-content p{
+    font-family: arial;
+    font-size: 11px;
+    display: inline-block;
+    margin-top: 6px;   
+}
+.search .tooltip{
+    background-color: gray;
+    color: white;
+    position: absolute;
+    bottom: -25px;
+    right: -20px;
+    padding: 3px;
+    opacity: 0;
+    pointer-events: none;
+}
+.up{
+    position: relative;
+}
+.up .up-tool{
+    
+    background-color: gray;
+    color:white;
+    padding: 4px;
+    font-size: 14px;
+    font-family: Arial;
+    position :absolute;
+    white-space: nowrap;
+    right: 0;
+    opacity: 0;
+}
+.up:hover .up-tool{
+    opacity: 1;
+    pointer-events:none;
+    transition:opacity 0.5s;
+}
+

@@ -1,0 +1,60 @@
+.img11{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.img11:hover{
+    cursor:pointer
+}
+.div11{
+    position: relative;
+    
+}
+.imgclass1{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.imgclass1:hover,
+.time:hover{
+    cursor:pointer;
+}
+.textclass1{
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: -6px;
+
+}
+
+.channel1{
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    border-radius: 20px;
+    margin-top: 12px;
+}
+.time{
+    font-family: arial;
+    font-size:12px;
+    padding:3px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+    
+}
+.imgclass1 .adhi{
+    position: absolute;
+    top:20px;
+   left: 30px;
+   padding: 6px;
+   border-radius: 6px;
+   opacity: 0;
+   pointer-events: none;
+}
+.imgclass1:hover .adhi{
+    opacity: 1;
+    transition: opacity 0.5s;
+}

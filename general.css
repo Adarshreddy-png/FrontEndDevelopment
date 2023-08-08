@@ -1,0 +1,75 @@
+.p11{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    width:100%;
+    font-size:14px;
+    margin-bottom: 0px;
+    line-height: 20px;
+    
+}
+.p12{
+    font-family: arial;
+    font-size: 14px;
+    color: rgb(121, 106, 106);
+    margin-top: 8px;
+    margin-bottom: 0px;
+    width: 100%;
+
+}
+.p13{
+    font-family: arial;
+    font-size: 14px;
+    color: rgb(121, 106, 106);
+    margin-top: 6px;
+    
+
+}
+.main-div1{
+    
+    margin-top: 10px;
+    vertical-align: top;
+    min-width: 250px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0, 0, 0.1);
+  
+    
+}
+.p11:hover,.p12:hover{
+    cursor:pointer;
+}
+.div12{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    
+
+}
+.one{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap :15px;
+    row-gap: 10px;
+}
+
+@media  (max-width:800px)
+{
+    .one
+    {
+        grid-template-columns:1fr 1fr ;
+    }
+}
+
+
+.up .a{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    color: white;
+    background-color: rgb(224, 4, 4);
+    font-size: 11px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 15px;
+
+}
